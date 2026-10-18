@@ -40,6 +40,12 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+downloads/
+*.mp4
+*.m4v
+*.webm
+*.mkv
+*.mov
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/

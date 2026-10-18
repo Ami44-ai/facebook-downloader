@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facebook Downloader</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #0f172a, #111827);
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 24px;
+    }
+    .box {
+      width: 100%;
+      max-width: 800px;
+      background: rgba(17, 24, 39, 0.9);
+      border: 1px solid rgba(148,163,184,0.25);
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 2rem;
+    }
+    form {
+      display: flex;
+      gap: 12px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+    input {
+      flex: 1 1 420px;
+      background: rgba(15,23,42,0.9);
+      color: white;
+      border: 1px solid rgba(148,163,184,0.25);
+      border-radius: 12px;
+      padding: 16px 18px;
+      font-size: 1rem;
+    }
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      padding: 16px 22px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    #status {
+      margin-top: 18px;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: rgba(15, 23, 42, 1);
+      border: 1px solid rgba(148,163,184,0.2);
+      min-height: 50px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Facebook Downloader</h1>
+    <p>Paste a Facebook video link, then click download.</p>
+
+    <form method="POST" action="/download" target="_blank">
+      <input type="url" name="url" placeholder="https://www.facebook.com/..." maxlength="2048" required />
+      <button type="submit">Download</button>
+    </form>
+  </div>
+</body>
+</html>
